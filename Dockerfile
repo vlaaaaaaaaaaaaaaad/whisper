@@ -2,7 +2,7 @@
 FROM pytorch/pytorch:1.7.0-cuda11.0-cudnn8-devel
 
 # Install a new library
-RUN pip install faster_whisper flask
+RUN pip install requirements.txt
 
 # Copy files from your local system into the Docker image
 COPY ./ /whisper-server
